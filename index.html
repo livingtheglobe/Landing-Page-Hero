@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maldives Budget Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            colors: {
+              maldives: {
+                50: '#F0FDFA', 
+                100: '#E0F8FA',
+                400: '#18727D', // Base Teal as requested
+                500: '#18727D', // Primary Brand Color
+                600: '#125A63', // Darker hover
+                800: '#0E444B',
+              },
+              accent: {
+                400: '#FFB347',
+                500: '#FF8400', // Requested Orange/Yellow
+                600: '#E67600',
+              },
+              ocean: {
+                800: '#155E75',
+                900: '#083344',
+              },
+              sand: {
+                50: '#FFFBEB',
+                100: '#FEF3C7',
+              }
+            },
+            boxShadow: {
+              'soft': '0 20px 40px -15px rgba(24, 114, 125, 0.25)',
+              'glow': '0 0 20px -5px rgba(255, 132, 0, 0.3)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      /* Hide scrollbar for clean embedded look */
+      ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
